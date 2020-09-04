@@ -1,16 +1,33 @@
 {
-  "name": "vscode-simple-file",
-	"displayName": "vscode-simple-file",
-	"description": "",
-	"version": "0.0.1",
+  "name": "vscode-mytemplates",
+	"displayName": "My Templates",
+  "description": "Generate your custom templates with My Templates",
+  "publisher": "maurodesouza",
+	"author": "Mauro de Souza",
+  "version": "1.0.0",
+  "homepage": "https://github.com/maurodesouza/vscode-mytemplates",
+	"bugs": {
+		"url": "https://github.com/maurodesouza/vscode-mytemplates/issues"
+  },
+	"repository": {
+    "type": "git",
+    "url": "https://github.com/maurodesouza/vscode-mytemplates.git"
+	},
 	"engines": {
 		"vscode": "^1.48.0"
-	},
+  },
+  "keywords": [
+		"readme",
+		"file",
+		"templates",
+		"custom",
+		"multi-root ready"
+	],
 	"categories": [
 		"Other"
 	],
 	"activationEvents": [
-        "*"
+    "*"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
