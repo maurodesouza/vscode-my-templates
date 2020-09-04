@@ -1,10 +1,8 @@
 import * as vscode from 'vscode';
+import myTemplates from './commands/myTemplates';
 
 export function activate(context: vscode.ExtensionContext) {
-  let disposable = vscode.commands.registerCommand('vscode-simple-file.helloWorld', () => {
-
-    vscode.window.showInformationMessage('Hello World from vscode-simple-file!');
-  });
+  let disposable = vscode.commands.registerCommand('simple-file.getTemplate', myTemplates);
 
   context.subscriptions.push(disposable);
 }
