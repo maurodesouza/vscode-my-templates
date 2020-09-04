@@ -7,5 +7,5 @@ export default () => {
 
   currentOpenFile.document.save();
 
-  return currentOpenFile.document.uri;
+  return currentOpenFile;
 };

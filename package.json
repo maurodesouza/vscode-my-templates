@@ -18,6 +18,10 @@
 			{
 				"command": "simple-file.getTemplate",
 				"title": "My Templates"
+      },
+      {
+				"command": "simple-file.saveAsTemplate",
+				"title": "Save as Template"
 			}
     ],
 
@@ -35,6 +39,10 @@
 			"editor/context": [
 				{
           "command": "simple-file.getTemplate",
+					"group": "navigation"
+        },
+        {
+          "command": "simple-file.saveAsTemplate",
 					"group": "navigation"
 				}
 			]
