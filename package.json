@@ -10,16 +10,35 @@
 		"Other"
 	],
 	"activationEvents": [
-        "onCommand:vscode-simple-file.helloWorld"
+        "*"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "vscode-simple-file.helloWorld",
-				"title": "Hello World"
+				"command": "simple-file.getTemplate",
+				"title": "My Templates"
 			}
-		]
+    ],
+
+    "configuration": {
+      "title": "My Templates",
+      "properties": {
+        "mytemplates.path": {
+          "type": "string",
+          "description": "The path to your templates folder"
+        }
+      }
+    },
+
+		"menus": {
+			"editor/context": [
+				{
+          "command": "simple-file.getTemplate",
+					"group": "navigation"
+				}
+			]
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "yarn run compile",
