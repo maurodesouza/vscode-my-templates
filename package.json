@@ -33,11 +33,11 @@
 	"contributes": {
 		"commands": [
 			{
-				"command": "simple-file.getTemplate",
+				"command": "mytemplates.myTemplates",
 				"title": "My Templates"
       },
       {
-				"command": "simple-file.saveAsTemplate",
+				"command": "mytemplates.saveAsTemplate",
 				"title": "Save as Template"
 			}
     ],
@@ -55,12 +55,12 @@
 		"menus": {
 			"editor/context": [
 				{
-          "command": "simple-file.getTemplate",
-					"group": "navigation"
+          "command": "mytemplates.myTemplates",
+					"group": "@mytemplates"
         },
         {
-          "command": "simple-file.saveAsTemplate",
-					"group": "navigation"
+          "command": "mytemplates.saveAsTemplate",
+					"group": "@mytemplates"
 				}
 			]
 		}

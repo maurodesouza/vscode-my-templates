@@ -5,8 +5,8 @@ import saveAsTemplate from './commands/saveAsTemplate';
 
 export function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(
-    vscode.commands.registerCommand('simple-file.getTemplate', myTemplates),
-    vscode.commands.registerCommand('simple-file.saveAsTemplate', saveAsTemplate)
+    vscode.commands.registerCommand('mytemplates.myTemplates', myTemplates),
+    vscode.commands.registerCommand('mytemplates.saveAsTemplate', saveAsTemplate)
   );
 }
 
