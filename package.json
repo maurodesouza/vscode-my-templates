@@ -5,6 +5,7 @@
   "publisher": "maurodesouza",
 	"author": "Mauro de Souza",
   "version": "1.0.0",
+  "icon": "logo.png",
   "homepage": "https://github.com/maurodesouza/vscode-mytemplates",
 	"bugs": {
 		"url": "https://github.com/maurodesouza/vscode-mytemplates/issues"
