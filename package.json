@@ -1,0 +1,90 @@
+{
+  "name": "vscode-mytemplates",
+	"displayName": "My Templates",
+  "description": "Generate your custom templates with My Templates",
+  "publisher": "maurodesouza",
+	"author": "Mauro de Souza",
+  "version": "1.0.0",
+  "icon": "logo.png",
+  "homepage": "https://github.com/maurodesouza/vscode-mytemplates",
+	"bugs": {
+		"url": "https://github.com/maurodesouza/vscode-mytemplates/issues"
+  },
+	"repository": {
+    "type": "git",
+    "url": "https://github.com/maurodesouza/vscode-mytemplates.git"
+	},
+	"engines": {
+		"vscode": "^1.48.0"
+  },
+  "keywords": [
+		"readme",
+		"file",
+		"templates",
+		"custom",
+		"multi-root ready"
+	],
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+    "*"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "mytemplates.myTemplates",
+				"title": "My Templates"
+      },
+      {
+				"command": "mytemplates.saveAsTemplate",
+				"title": "Save as Template"
+			}
+    ],
+
+    "configuration": {
+      "title": "My Templates",
+      "properties": {
+        "mytemplates.path": {
+          "type": "string",
+          "description": "The path to your templates folder"
+        }
+      }
+    },
+
+		"menus": {
+			"editor/context": [
+				{
+          "command": "mytemplates.myTemplates",
+					"group": "@mytemplates"
+        },
+        {
+          "command": "mytemplates.saveAsTemplate",
+					"group": "@mytemplates"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "yarn run compile",
+		"compile": "tsc -p ./",
+		"lint": "eslint src --ext ts",
+		"watch": "tsc -watch -p ./",
+		"pretest": "yarn run compile && yarn run lint",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.48.0",
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.0.0",
+		"@types/node": "^14.0.27",
+		"eslint": "^7.6.0",
+		"@typescript-eslint/eslint-plugin": "^3.8.0",
+		"@typescript-eslint/parser": "^3.8.0",
+		"glob": "^7.1.6",
+		"mocha": "^8.0.1",
+		"typescript": "^3.8.3",
+		"vscode-test": "^1.4.0"
+	}
+}
